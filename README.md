@@ -6,7 +6,8 @@
 
 invent2026 for ULL-HFT-trading. Benchmark = 145ns-P80. CPU-3GHz3. The tail & head have double attribute. One for local none atomic idx++per word, other one for atomic-shared++ per packet.No kernel noise, Zero MESI broadcasting, No rtos, No nasty interrupts,No Ctrl+C interrupt of threads but Ctrl+Z  interrupt of process.
 [140- 150ns]:  2,046,938  (20.43%)  ← New peak (with union)
-![Alt Text]/home/natska/invent-2027-hft-engine/docs/JPEG/invent_2027_hft_manifesto.png
+
+![Invent 2027 HFT Manifesto](docs/JPEG/invent_2027_hft_manifesto.png)
 
 Built as a technical portfolio for systematic trading firms seeking engineers who understand that **p99.99 matters more than p50**.
 
@@ -155,11 +156,11 @@ uint32_t val = tail.atomic.load(std::memory_order_relaxed);
 │                                                                           │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
-![Alt Text]/home/natska/invent-2027-hft-engine/docs/JPEG/Alpha-to-Execution Infrastructure.png
+![Alpha to Execution Infrastructure](docs/JPEG/Alpha-to-Execution%20Infrastructure.png)
 ---
-![Alt Text]/home/natska/invent-2027-hft-engine/docs/JPEG/Grub settings.png
-![Alt Text]/home/natska/invent-2027-hft-engine/docs/JPEG/memoryOrder & MESI.png
-![Alt Text]/home/natska/invent-2027-hft-engine/docs/JPEG/zero kernel noise.png
+![Grub settings](docs/JPEG/Grub%20settings.png)
+![memoryOrder & MESI](docs/JPEG/memoryOrder%20&%20MESI.png)
+![zero kernel noise](docs/JPEG/zero%20kernel%20noise.png)
 
 ## Benchmark Results
 
